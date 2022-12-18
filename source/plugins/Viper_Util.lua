@@ -5,7 +5,7 @@ getgenv().Viper_Util = {
     ['Lighting'] = game:GetService('Lighting') or workspace.Lighting
     ['UIS'] = game:GetService('UserInputService'),
     ['Client'] = getgenv().Viper_Util['Players'].LocalPlayer,
-    ['CV'] = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/viper-hub/master/VERSION.lua"))()
+    ['CV'] = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zirmith/Viper-Hub/main/VERSION.lua"))()
 }
 
 
@@ -16,7 +16,7 @@ getgenv().Viper_Util:CheckForUpdate()
         return 'Already Updated'
     else
         pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/viper-hub/master/source/main/public/builds/"..getgenv().Viper_Util['CV'].Version))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Zirmith/Viper-Hub/main/source/main/public/builds/"..getgenv().Viper_Util['CV'].Version))()
         end)
         return 'Updated'
     end
